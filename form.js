@@ -12,10 +12,23 @@ headerTitle.style.borderBottom = '3px solid #000'
 
 document.getElementById('addItem').style.color = "red";
 
-var items = document.getElementsByClassName('list-group-item');
-items[2].style.backgroundColor = "cyan";
+// get Element by className
 
-for(var i = 0;i<items.length;i++){
-    items[i].style.fontWeight = "bold";
-    items[i].style.color = "red";
+// var items = document.getElementsByClassName('list-group-item');
+// items[2].style.backgroundColor = "cyan";
+
+// for(var i = 0;i<items.length;i++){
+//     items[i].style.fontWeight = "bold";
+//     items[i].style.color = "red";
+// }
+
+
+// Get element by tag name
+var li = document.getElementsByTagName("li");
+console.log(li);
+
+for(var i = 0;i<li.length;i++){
+    li[i].style.fontWeight = "bold";
+    li[i].style.color = "green";
 }
+
