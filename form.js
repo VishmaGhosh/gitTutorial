@@ -10,4 +10,12 @@ var headerTitle = document.getElementById('headerTitle');
 headerTitle.textContent = "Hello";
 headerTitle.style.borderBottom = '3px solid #000'
 
-document.getElementById('addItem').style.color = "red"
+document.getElementById('addItem').style.color = "red";
+
+var items = document.getElementsByClassName('list-group-item');
+items[2].style.backgroundColor = "cyan";
+
+for(var i = 0;i<items.length;i++){
+    items[i].style.fontWeight = "bold";
+    items[i].style.color = "red";
+}
