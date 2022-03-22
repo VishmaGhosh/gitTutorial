@@ -9,23 +9,30 @@
     <title>Document</title>
 </head>
 <body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="hrader-title">Item Lister</h1>
+            <span style="display: none;">123</span>
+        </div>
+    </header>
     <div class="container pt-5">
-        <h1 id="headerTitle">My Items</h1>
         <form>
-            <h2 id="addItem">Add Item</h2>
+            <h2 id="addItem" class="title">Add Item</h2>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
             </div>
             <button type="submit" class="btn btn-primary">Add Item</button>
-          </form>
-          <h2>Items</h2>
-          <ul id="items" class="list-group">
-            <li class="list-group-item">Item 1</li>
-            <li class="list-group-item">Item 2</li>
-            <li class="list-group-item">Item 3</li>
-            <li class="list-group-item">Item 4</li>
-          </ul>
+        </form>
+        <h2 class="title">Items</h2>
+        <ul id="items" class="list-group">
+            <div class="ulDiv">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </div>
+        </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
